@@ -72,8 +72,7 @@ object FunSets {
   /**
    * Returns a set transformed by applying `f` to each element of `s`.
    */
-  // there exists an element is set s that when done f(s) == x
-  //
+  // For given x, new set returns true, if there exists an element y in set s that fulfills f(y) == x
   def map(s: Set, f: Int => Int): Set = x => exists(s, y => x == f(y))
 
   /**
